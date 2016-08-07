@@ -3,7 +3,7 @@ Petsitter::Application.routes.draw do
   root 'static_pages#index'
   namespace :parent do
     resources :pets, only: [:new, :create, :show]
-  
+
 end
 
 
