@@ -1,5 +1,13 @@
-<script>
-
+<script type="text/javascript">
+$(function() {
+    $('input[name="daterange"]').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+            format: 'MM/DD/YYYY h:mm A'
+        }
+    });
+});
 </script>
 
 <div class="hero">
@@ -9,7 +17,11 @@
     <h2> Your pets are sweet ands stuff </h2>
     <br />
     <br />
-    <h2> When will you need pet sitting?</h2>
-    
-  </div>
+      <div class="info-form">
+        <h2> When will you need pet sitting?</h2>
+          <input type="text" name="daterange" value="09/01/2016 1:30 PM - 09/30/2016 9:30 PM"/>
+
+      </div>
+    </div> 
+  </div>  
 </div>
