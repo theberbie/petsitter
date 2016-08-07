@@ -43,6 +43,10 @@ gem 'devise'
 
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
 
 
 # Use ActiveModel has_secure_password
