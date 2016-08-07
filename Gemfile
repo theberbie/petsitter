@@ -39,8 +39,9 @@ gem 'jquery-ui-rails'
 gem 'momentjs-rails'
 gem 'bootstrap-daterangepicker-rails'
 
-gem 'simple_form'
+gem 'devise'
 
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
 
 
