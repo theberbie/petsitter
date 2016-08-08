@@ -1,4 +1,5 @@
-class CreateAds < ActiveRecord::Migration
+class CreateAds < Activ
+  eRecord::Migration
   def change
     create_table :ads do |t|
 
