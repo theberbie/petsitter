@@ -1,11 +1,7 @@
 Petsitter::Application.routes.draw do
   devise_for :users
   root 'static_pages#index'
-  namespace :parent do
-    resources :pets, only: [:new, :create, :show]
-
-end
-
+  resources :ads
 
 
 
