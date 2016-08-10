@@ -16,6 +16,7 @@ class AdsController < ApplicationController
 
   def show
     @ad = Ad.find(params[:id])
+    @review = Review.new
   end
 
   def edit

@@ -1,7 +1,9 @@
 Petsitter::Application.routes.draw do
   devise_for :users
   root 'static_pages#index'
-  resources :ads
+  resources :ads do
+    resources :reviews, only: :create
+  end
 
 
 
