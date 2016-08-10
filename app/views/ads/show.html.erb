@@ -74,7 +74,7 @@
     <div >
      <blockquote>
        <b><%= review.message %> </b>
-       <b><%= review.rating %> </b>
+       <b>Rating: <%=imdb_style_rating_for @review, 'Nice', disable_after_rate: true%> </b>
        <small> <%= review.user.email %> </small>
      </blockquote>
      </div>
