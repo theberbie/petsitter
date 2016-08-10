@@ -4,5 +4,9 @@
   <i> <%= ad.address_line %>
   <i> <%= ad.zipcode %> 
   <p> <%= ad.describe %> 
+  <% if ad.user.present? %>
+
   <small><%= ad.user.email %></small>
+<% end %>
+
 <% end %>

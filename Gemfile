@@ -46,6 +46,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+gem "geocoder", "1.3.4"
+
+gem "figaro", ">= 1.0.0"
 
 
 # Use ActiveModel has_secure_password
