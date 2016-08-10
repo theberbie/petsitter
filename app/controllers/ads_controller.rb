@@ -1,4 +1,5 @@
 class AdsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
 
   def new
     @ad = Ad.new
@@ -9,7 +10,7 @@ class AdsController < ApplicationController
   end
 
   def create
-    Ad.create(ad_params)
+    current_user.ads.create(ad_params)
     redirect_to root_path
   end
 
