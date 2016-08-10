@@ -1,5 +1,5 @@
 <% @ads.each do |ad| %>
-  <h2> <%= ad.pet_name %> </h2>
+  <h2> <%= link_to ad.pet_name, ad_path(ad) %> </h2>
   <br />
   <i> <%= ad.address_line %>
   <i> <%= ad.zipcode %> 
@@ -10,3 +10,4 @@
 <% end %>
 
 <% end %>
+

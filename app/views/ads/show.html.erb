@@ -1,0 +1,33 @@
+<%= @ad.pet_name %>
+<i> <%= @ad.address_line %> </i>
+<br />
+<br />
+<p> <%= @ad.describe %> </p>
+ 
+   <% if @ad.latitude.present? && @ad.longitude.present? %>
+
+  
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: <%= @ad.latitude%>, lng: <%= @ad.longitude%>};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0zwWfNZ8RMpmoSr3jFs2HKv8LFzg9X6E&callback=initMap">
+    </script>
+
+    <div id="map"> </div>
+
+  <% end %>

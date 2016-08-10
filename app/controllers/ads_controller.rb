@@ -14,6 +14,10 @@ class AdsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @ad = Ad.find(params[:id])
+  end
+
   private
 
   def ad_params
