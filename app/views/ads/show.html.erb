@@ -3,6 +3,13 @@
 <br />
 <br />
 <p> <%= @ad.describe %> </p>
+<div class="pull-right">
+<% if current_user && current_user = @ad.user %>
+  <%=link_to "Edit", edit_ad_path(@ad), class:'btn btn-md btn-success' %>
+  <%=link_to "Delete", ad_path(@ad), method: :delete, data: {confirm: 'Are you sure you want to delete this ad?'}, class: 'btn btn-danger' %>
+  <% end %>
+</div>
+
  
    <% if @ad.latitude.present? && @ad.longitude.present? %>
 

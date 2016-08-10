@@ -1,5 +1,5 @@
 class AdsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def new
     @ad = Ad.new
@@ -16,6 +16,22 @@ class AdsController < ApplicationController
 
   def show
     @ad = Ad.find(params[:id])
+  end
+
+  def edit
+    @ad = Ad.find(params[:id])
+  end
+
+  def update
+    @ad = Ad.find(params[:id])
+    @ad.update_attributes(ad_params)
+    redirect_to root_path
+  end
+
+  def destroy
+    @ad = Ad.find(params[:id])
+    @ad.destroy
+    redirect_to root_path
   end
 
   private
