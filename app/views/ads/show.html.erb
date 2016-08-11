@@ -55,7 +55,7 @@
       <div class="modal-body">
         <%= simple_form_for @review, url: ad_reviews_path(@ad) do |f| %>
           <%= f.input :message %>
-          <%= f.input :rating %>
+          <%=rating_for @review, 'Nice' %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -74,7 +74,7 @@
     <div >
      <blockquote>
        <b><%= review.message %> </b>
-       <b>Rating: <%=imdb_style_rating_for @review, 'Nice', disable_after_rate: true%> </b>
+       <b>Rating: <%=rating_for @review, 'Nice', disable_after_rate: true%> </b>
        <small> <%= review.user.email %> </small>
      </blockquote>
      </div>
