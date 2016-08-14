@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'react_on_rails', '~>6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
@@ -51,7 +51,7 @@ gem "figaro", ">= 1.0.0"
 
 gem 'ratyrate'
 
-gem "react_on_rails", "2.1"
+# gem "react_on_rails", "2.1"
 
 
 # Use ActiveModel has_secure_password
