@@ -51,7 +51,7 @@ gem "figaro", ">= 1.0.0"
 
 gem 'ratyrate'
 
-gem 'react_on_rails', '2.1'
+gem 'react_on_rails', '~> 2.0.0.rc.3'
 
 
 # Use ActiveModel has_secure_password

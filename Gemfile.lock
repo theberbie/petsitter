@@ -99,11 +99,11 @@ GEM
     ratyrate (1.2.2.alpha)
     rdoc (4.2.2)
       json (~> 1.4)
-    react_on_rails (2.1.0)
+    react_on_rails (2.0.2)
       connection_pool
       execjs (~> 2.5)
       rails (>= 3.2)
-      rainbow (~> 2.1)
+      rainbow (~> 2.0)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     rspec-core (3.5.2)
@@ -174,7 +174,7 @@ DEPENDENCIES
   pg
   rails (= 4.0.4)
   ratyrate
-  react_on_rails (= 2.1)
+  react_on_rails (~> 2.0.0.rc.3)
   rspec-rails (~> 3.0)
   sass-rails
   sdoc
