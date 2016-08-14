@@ -25,6 +25,7 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    addressable (2.4.0)
     arel (4.0.2)
     autoprefixer-rails (6.4.0.1)
       execjs
@@ -54,6 +55,8 @@ GEM
     execjs (2.7.0)
     figaro (1.1.1)
       thor (~> 0.14)
+    foreman (0.82.0)
+      thor (~> 0.19.1)
     geocoder (1.3.4)
     hike (1.2.3)
     i18n (0.7.0)
@@ -97,6 +100,16 @@ GEM
     ratyrate (1.2.2.alpha)
     rdoc (4.2.2)
       json (~> 1.4)
+<<<<<<< HEAD
+=======
+    react_on_rails (6.0.5)
+      addressable
+      connection_pool
+      execjs (~> 2.5)
+      foreman
+      rails (>= 3.2)
+      rainbow (~> 2.1)
+>>>>>>> f6a7bce94b02aacad62059a9f82c6db633fabda4
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     rspec-core (3.5.1)
@@ -167,9 +180,16 @@ DEPENDENCIES
   pg
   rails (= 4.0.4)
   ratyrate
+<<<<<<< HEAD
+=======
+  react_on_rails (~> 6)
+>>>>>>> f6a7bce94b02aacad62059a9f82c6db633fabda4
   rspec-rails (~> 3.0)
   sass-rails
   sdoc
   simple_form (~> 3.2, >= 3.2.1)
   sprockets (= 2.11.0)
   uglifier (>= 1.3.0)
+
+BUNDLED WITH
+   1.12.5
