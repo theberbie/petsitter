@@ -1,4 +1,7 @@
 Petsitter::Application.routes.draw do
+  namespace :api do
+    resources :ads
+  end
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
   root 'static_pages#index'
